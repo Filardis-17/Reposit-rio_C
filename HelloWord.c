@@ -6,20 +6,25 @@
 
 int main(){
 
-    int idade = 22;
-    double salario = 8, adicional;
+    int idade;
+    double salario, adicional;
     char sexo = 'M';
-    char mentalidade[50];
+    char posicao[50];
 
-    printf(" ------- Descrição Pessoal -------\n\n");
-    printf("Minha idade e: %d\n", idade);
-    printf("Ganho aproximadamente: %.2lf\n", salario);
+    printf(" ------- Descricao Pessoal -------\n\n");
+    printf("Minha idade e: ");
+    scanf("%d", &idade);
+    printf("Ganho aproximadamente: ");
+    scanf("%lf", &salario);
     printf("Sou do sexo: %c\n", sexo);
-    strcpy(mentalidade, "Alfa");
-    printf("Minha mentalidade e: %s\n\n", mentalidade);
+    strcpy(posicao, "Estagiário");
+    printf("Minha posicao e: %s\n\n", posicao);
 
-
-    printf("o valor novo do salario e: %.2lf\n\n", pow(salario, 2)); /* Pow é uma funcao aritmética de potenciação*/
+    printf("------- Mais Operacoes -------\n\n");
+    printf("O novo do salario e: %.2lf\n", pow(salario, 2)); /* Pow é uma funcao aritmética de potenciação */
+    printf("Digite o valor adicional, absoluto: ");
+    scanf("%lf", &adicional);
+    printf("Calculo da raiz, adicional: %.0lf\n", sqrt(adicional));
 
 
 
