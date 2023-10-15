@@ -11,7 +11,7 @@ int main(){
     char sexo = 'M';
     char posicao[50];
 
-    printf(" ------- Descricao Pessoal -------\n\n");
+    printf(" ------- Descrica o Pessoal -------\n\n");
     printf("Minha idade e: ");
     scanf("%d", &idade);
     printf("Ganho aproximadamente: ");
@@ -21,7 +21,8 @@ int main(){
     printf("Minha posicao e: %s\n\n", posicao);
 
     printf("------- Mais Operacoes -------\n\n");
-    printf("O novo do salario e: %.2lf\n", pow(salario, 2)); /* Pow é uma funcao aritmética de potenciação */
+    salario = pow(salario, 2);
+    printf("O novo do salario e: %.2lf\n", salario); /* Pow é uma funcao aritmética de potenciação */
     printf("Digite o valor adicional, absoluto: ");
     scanf("%lf", &adicional);
     printf("Calculo da raiz, adicional: %.0lf\n", sqrt(adicional));
